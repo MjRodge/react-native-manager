@@ -1,7 +1,9 @@
 import { email_changed, password_changed } from '../actions/types';
 
 const initial_state = { email: '', password: '' };
+
 export default (state = initial_state, action) => {
+  console.log(action);
   switch (action.type) {
     case email_changed:
       return { ...state, email: action.payload };
