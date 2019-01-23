@@ -14,7 +14,9 @@ const styles = {
 };
 
 const CardSection = props => {
-  return <View style={styles.containerStyle}>{props.children}</View>;
+  return (
+    <View style={[styles.containerStyle, props.style]}>{props.children}</View>
+  );
 };
 
 export { CardSection };
